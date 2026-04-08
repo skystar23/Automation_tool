@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>login_window</class>
+<widget class="QWidget" name="centralwidget">
+  <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+      <spacer name="verticalSpacerTop">
+        <property name="orientation">
+          <enum>Qt::Vertical</enum>
+        </property>
+      </spacer>
+    </item>
+    <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+          <spacer name="horizontalSpacerLeft">
+            <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+            </property>
+          </spacer>
+        </item>
+        <item>
+          <widget class="QLineEdit" name="Username"/>
+        </item>
+        <item>
+          <spacer name="horizontalSpacerRight">
+            <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </item>
+    <item>
+      <layout class="QHBoxLayout" name="horizontalLayoutPassword">
+        <item>
+          <spacer name="horizontalSpacerLeftPwd">
+            <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+            </property>
+          </spacer>
+        </item>
+        <item>
+          <widget class="QLineEdit" name="Password">
+            <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <spacer name="horizontalSpacerRightPwd">
+            <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+            </property>
+          </spacer>
+        </item>
+      </layout>
+    </item>
+    <item>
+      <spacer name="verticalSpacerBottom">
+        <property name="orientation">
+          <enum>Qt::Vertical</enum>
+        </property>
+      </spacer>
+    </item>
+  </layout>
+</widget>
+ <resources/>
+ <connections/>
+</ui>
