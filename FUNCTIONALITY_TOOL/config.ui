@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1297</width>
+    <width>1343</width>
     <height>616</height>
    </rect>
   </property>
@@ -135,7 +135,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QFrame" name="sideMenuFrame">
+   <widget class="QFrame" name="side_menu">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -149,28 +149,28 @@
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QPushButton" name="btnStatus_4">
+      <widget class="QPushButton" name="Config_btn">
        <property name="text">
         <string>Configurations</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btnStatus">
+      <widget class="QPushButton" name="log_btn">
        <property name="text">
         <string>Log</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btnStatus_2">
+      <widget class="QPushButton" name="report_btn">
        <property name="text">
         <string>Reports</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btnStatus_3">
+      <widget class="QPushButton" name="test_btn">
        <property name="text">
         <string>Test Runner</string>
        </property>
@@ -178,7 +178,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QFrame" name="sideMenuFrame_2">
+   <widget class="QFrame" name="config_display">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -239,7 +239,7 @@
       <rect>
        <x>0</x>
        <y>40</y>
-       <width>961</width>
+       <width>861</width>
        <height>471</height>
       </rect>
      </property>
