@@ -81,13 +81,17 @@ class Sidemenu(QtWidgets.QMainWindow):
         super().__init__()
         self.ui=Ui_welcome()
         self.ui.setupUi(self)
+
+        self.config_page=ConfigWindow()
+        self.config_page.setParent(self)
+        self.config_page.hide()
         self.ui.config_btn.clicked.connect(self.config_window)
+        
     
     def config_window(self):
-        self.welcome_window=ConfigWindow()
-        self.welcome_window.show()
-        self.close()        
-
+        self.ui.centralwidget.hide()  
+        self.config_page.show()
+                
 
 class LoginWindow(QtWidgets.QMainWindow):
     def __init__(self):
@@ -100,7 +104,6 @@ class LoginWindow(QtWidgets.QMainWindow):
 
     def validate_login(self):
         if self.ui.Username.text().strip() == "root" and self.ui.Password.text().strip() == "root":
-            # QtWidgets.QMessageBox.information(self, "Login Success", "Welcome!")
             self.welcome_window=Sidemenu()
             self.welcome_window.show()
             self.close()

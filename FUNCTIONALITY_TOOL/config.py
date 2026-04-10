@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1343, 616)
+        MainWindow.resize(1083, 696)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.titleFrame = QtWidgets.QFrame(self.centralwidget)
@@ -106,7 +106,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.addWidget(self.gns3_config)
         self.horizontalLayout_3.addLayout(self.horizontalLayout_2)
         self.device_config_widget = QtWidgets.QWidget(self.config_display)
-        self.device_config_widget.setGeometry(QtCore.QRect(0, 40, 861, 471))
+        self.device_config_widget.setGeometry(QtCore.QRect(0, 40, 861, 541))
         font = QtGui.QFont()
         font.setPointSize(13)
         self.device_config_widget.setFont(font)
@@ -172,7 +172,6 @@ class Ui_MainWindow(object):
         self.device_port.setObjectName("device_port")
         self.gridLayout.addWidget(self.device_port, 1, 2, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
-        
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -198,11 +197,11 @@ class Ui_MainWindow(object):
         self.label_5.setText(_translate("MainWindow", "Version"))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
+# if __name__ == "__main__":
+#     import sys
+#     app = QtWidgets.QApplication(sys.argv)
+#     MainWindow = QtWidgets.QMainWindow()
+#     ui = Ui_MainWindow()
+#     ui.setupUi(MainWindow)
+#     MainWindow.show()
+#     sys.exit(app.exec_())
