@@ -22,6 +22,7 @@ class Page2(QtWidgets.QWidget):
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
+        self.resize(500,400)
         self.setWindowTitle("StackedWidget Practice")
         
         #Created stacked widget

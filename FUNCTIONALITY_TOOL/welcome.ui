@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>910</width>
-    <height>500</height>
+    <width>1105</width>
+    <height>567</height>
    </rect>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -16,7 +16,7 @@
      <rect>
       <x>1</x>
       <y>9</y>
-      <width>1081</width>
+      <width>1111</width>
       <height>61</height>
      </rect>
     </property>
@@ -195,7 +195,7 @@
       <x>0</x>
       <y>70</y>
       <width>122</width>
-      <height>291</height>
+      <height>361</height>
      </rect>
     </property>
     <property name="palette">
@@ -254,14 +254,14 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="reports_btn">
+      <widget class="QPushButton" name="report_btn">
        <property name="text">
         <string>Reports</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="test_btn">
+      <widget class="QPushButton" name="test_runner_btn">
        <property name="text">
         <string>Test Runner</string>
        </property>
@@ -274,7 +274,7 @@
      <rect>
       <x>120</x>
       <y>70</y>
-      <width>961</width>
+      <width>991</width>
       <height>501</height>
      </rect>
     </property>
@@ -284,7 +284,7 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>405</x>
+       <x>395</x>
        <y>140</y>
        <width>101</width>
        <height>31</height>
@@ -298,7 +298,7 @@
       </font>
      </property>
      <property name="text">
-      <string>WELCOME</string>
+      <string>   WELCOME</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_2">
@@ -326,7 +326,7 @@
       <rect>
        <x>382</x>
        <y>200</y>
-       <width>121</width>
+       <width>131</width>
        <height>30</height>
       </rect>
      </property>

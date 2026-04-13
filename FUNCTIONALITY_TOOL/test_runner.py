@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'log.ui'
+# Form implementation generated from reading ui file 'test_runner.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -11,14 +11,14 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1101, 639)
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
+class Ui_test_runner(object):
+    def setupUi(self, test_runner):
+        test_runner.setObjectName("test_runner")
+        test_runner.resize(1198, 726)
+        self.centralwidget = QtWidgets.QWidget(test_runner)
         self.centralwidget.setObjectName("centralwidget")
         self.titleFrame = QtWidgets.QFrame(self.centralwidget)
-        self.titleFrame.setGeometry(QtCore.QRect(1, 9, 1081, 61))
+        self.titleFrame.setGeometry(QtCore.QRect(1, 9, 1171, 61))
         self.titleFrame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.titleFrame.setObjectName("titleFrame")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.titleFrame)
@@ -109,8 +109,8 @@ class Ui_MainWindow(object):
         self.test_runner_btn = QtWidgets.QPushButton(self.sideMenuFrame)
         self.test_runner_btn.setObjectName("test_runner_btn")
         self.verticalLayout.addWidget(self.test_runner_btn)
-        self.sideMenuFrame_2 = QtWidgets.QFrame(self.centralwidget)
-        self.sideMenuFrame_2.setGeometry(QtCore.QRect(123, 70, 961, 571))
+        self.widget = QtWidgets.QWidget(self.centralwidget)
+        self.widget.setGeometry(QtCore.QRect(120, 70, 1081, 691))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -256,43 +256,54 @@ class Ui_MainWindow(object):
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0, 128))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.PlaceholderText, brush)
-        self.sideMenuFrame_2.setPalette(palette)
-        self.sideMenuFrame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.sideMenuFrame_2.setObjectName("sideMenuFrame_2")
-        self.refresh_btn = QtWidgets.QPushButton(self.sideMenuFrame_2)
-        self.refresh_btn.setGeometry(QtCore.QRect(267, 509, 89, 25))
-        self.refresh_btn.setObjectName("refresh_btn")
-        self.export_btn = QtWidgets.QPushButton(self.sideMenuFrame_2)
-        self.export_btn.setGeometry(QtCore.QRect(460, 510, 80, 25))
-        self.export_btn.setObjectName("export_btn")
-        self.label = QtWidgets.QLabel(self.sideMenuFrame_2)
-        self.label.setGeometry(QtCore.QRect(411, 10, 31, 21))
+        self.widget.setPalette(palette)
+        self.widget.setObjectName("widget")
+        self.label = QtWidgets.QLabel(self.widget)
+        self.label.setGeometry(QtCore.QRect(415, 56, 91, 17))
         self.label.setObjectName("label")
-        self.logs_display = QtWidgets.QPlainTextEdit(self.sideMenuFrame_2)
-        self.logs_display.setGeometry(QtCore.QRect(110, 40, 691, 441))
-        self.logs_display.setObjectName("logs_display")
-        MainWindow.setCentralWidget(self.centralwidget)
+        self.label_2 = QtWidgets.QLabel(self.widget)
+        self.label_2.setGeometry(QtCore.QRect(260, 110, 67, 17))
+        self.label_2.setObjectName("label_2")
+        self.protocol_dp = QtWidgets.QComboBox(self.widget)
+        self.protocol_dp.setGeometry(QtCore.QRect(370, 110, 191, 25))
+        self.protocol_dp.setObjectName("protocol_dp")
+        self.run_btn = QtWidgets.QPushButton(self.widget)
+        self.run_btn.setGeometry(QtCore.QRect(420, 220, 89, 25))
+        self.run_btn.setObjectName("run_btn")
+        self.mark_str = QtWidgets.QLineEdit(self.widget)
+        self.mark_str.setEnabled(False)
+        self.mark_str.setGeometry(QtCore.QRect(370, 160, 191, 25))
+        self.mark_str.setObjectName("mark_str")
+        self.label_3 = QtWidgets.QLabel(self.widget)
+        self.label_3.setGeometry(QtCore.QRect(270, 160, 67, 17))
+        self.label_3.setObjectName("label_3")
+        self.checkBox = QtWidgets.QCheckBox(self.widget)
+        self.checkBox.setGeometry(QtCore.QRect(580, 110, 92, 23))
+        self.checkBox.setObjectName("checkBox")
+        test_runner.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.retranslateUi(test_runner)
+        QtCore.QMetaObject.connectSlotsByName(test_runner)
 
-    def retranslateUi(self, MainWindow):
+    def retranslateUi(self, test_runner):
         _translate = QtCore.QCoreApplication.translate
-        self.titleLabel.setText(_translate("MainWindow", "NOMUS COMM SYSTEMS PVT LTD"))
-        self.config_btn.setText(_translate("MainWindow", "Configurations"))
-        self.log_btn.setText(_translate("MainWindow", "Log"))
-        self.report_btn.setText(_translate("MainWindow", "Reports"))
-        self.test_runner_btn.setText(_translate("MainWindow", "Test Runner"))
-        self.refresh_btn.setText(_translate("MainWindow", "Refresh"))
-        self.export_btn.setText(_translate("MainWindow", "Export"))
-        self.label.setText(_translate("MainWindow", "Log"))
+        self.titleLabel.setText(_translate("test_runner", "NOMUS COMM SYSTEMS PVT LTD"))
+        self.config_btn.setText(_translate("test_runner", "Configurations"))
+        self.log_btn.setText(_translate("test_runner", "Log"))
+        self.report_btn.setText(_translate("test_runner", "Reports"))
+        self.test_runner_btn.setText(_translate("test_runner", "Test Runner"))
+        self.label.setText(_translate("test_runner", " Test Runner"))
+        self.label_2.setText(_translate("test_runner", "Protocol"))
+        self.run_btn.setText(_translate("test_runner", "RUN"))
+        self.label_3.setText(_translate("test_runner", "MARK"))
+        self.checkBox.setText(_translate("test_runner", " Add Mark"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
+    test_runner = QtWidgets.QMainWindow()
+    ui = Ui_test_runner()
+    ui.setupUi(test_runner)
+    test_runner.show()
     sys.exit(app.exec_())

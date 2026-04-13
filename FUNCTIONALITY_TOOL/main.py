@@ -96,6 +96,7 @@ class Sidemenu(QtWidgets.QMainWindow):
 class LoginWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
+        self.resize(500,400)
         self.ui=Ui_login()
         self.ui.setupUi(self)
         self.ui.login_button.clicked.connect(self.validate_login)
