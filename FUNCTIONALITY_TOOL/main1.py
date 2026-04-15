@@ -136,7 +136,8 @@ class TestRunnerWindow(QtWidgets.QMainWindow):
         super().__init__(parent)
         self.ui = Ui_test_runner()
         self.ui.setupUi(self)
-
+        self.ui.mark_label.hide()
+        self.ui.mark_str.hide()
         self.command = f"pytest -v -s /opt/V3_functional_testing/Testcases/test_*.py"
         self.ui.run_btn.clicked.connect(self.run_command)
 

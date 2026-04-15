@@ -762,11 +762,11 @@
       </rect>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
+    <widget class="QLabel" name="date_label">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>140</y>
+       <x>270</x>
+       <y>137</y>
        <width>67</width>
        <height>17</height>
       </rect>
@@ -777,7 +777,7 @@
     </widget>
     <widget class="QDateEdit" name="dateEdit">
      <property name="enabled">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
      <property name="geometry">
       <rect>
@@ -1317,5 +1317,22 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>All_reporsts_checkBox</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>dateEdit</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>735</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>565</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

@@ -771,7 +771,7 @@
     </widget>
     <widget class="QLineEdit" name="mark_str">
      <property name="enabled">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="geometry">
       <rect>
@@ -782,7 +782,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
+    <widget class="QLabel" name="mark_label">
      <property name="geometry">
       <rect>
        <x>270</x>
@@ -795,7 +795,7 @@
       <string>MARK</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="checkBox">
+    <widget class="QCheckBox" name="add_mark">
      <property name="geometry">
       <rect>
        <x>580</x>
@@ -812,5 +812,38 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>add_mark</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>mark_label</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>745</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>423</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>add_mark</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>mark_str</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>745</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>585</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
