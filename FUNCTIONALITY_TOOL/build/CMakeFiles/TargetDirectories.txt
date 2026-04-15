@@ -1,0 +1,4 @@
+/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles/build_ui.dir
+/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles/run.dir
+/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles/edit_cache.dir
+/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles/rebuild_cache.dir
