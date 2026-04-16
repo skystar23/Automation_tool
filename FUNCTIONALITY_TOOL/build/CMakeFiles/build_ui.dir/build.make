@@ -67,10 +67,12 @@ include CMakeFiles/build_ui.dir/compiler_depend.make
 include CMakeFiles/build_ui.dir/progress.make
 
 CMakeFiles/build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/config_ui.py
-CMakeFiles/build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/dummy_ui.py
 CMakeFiles/build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/fun_login_ui.py
+CMakeFiles/build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/gns3_data_ui.py
+CMakeFiles/build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/json_editor_ui.py
 CMakeFiles/build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/log_ui.py
 CMakeFiles/build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/reports_ui.py
+CMakeFiles/build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/source_data_ui.py
 CMakeFiles/build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/test_data_ui.py
 CMakeFiles/build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/test_runner_ui.py
 CMakeFiles/build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/welcome_ui.py
@@ -79,40 +81,50 @@ CMakeFiles/build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/welcome_ui.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/config.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/config_ui.py"
 	/usr/bin/python3.8 -m PyQt5.uic.pyuic /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/config.ui -o /root/Desktop/QT/FUNCTIONALITY_TOOL/src/config_ui.py
 
-/root/Desktop/QT/FUNCTIONALITY_TOOL/src/dummy_ui.py: /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/dummy.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/dummy.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/dummy_ui.py"
-	/usr/bin/python3.8 -m PyQt5.uic.pyuic /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/dummy.ui -o /root/Desktop/QT/FUNCTIONALITY_TOOL/src/dummy_ui.py
-
 /root/Desktop/QT/FUNCTIONALITY_TOOL/src/fun_login_ui.py: /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/fun_login.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/fun_login.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/fun_login_ui.py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/fun_login.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/fun_login_ui.py"
 	/usr/bin/python3.8 -m PyQt5.uic.pyuic /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/fun_login.ui -o /root/Desktop/QT/FUNCTIONALITY_TOOL/src/fun_login_ui.py
 
+/root/Desktop/QT/FUNCTIONALITY_TOOL/src/gns3_data_ui.py: /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/gns3_data.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/gns3_data.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/gns3_data_ui.py"
+	/usr/bin/python3.8 -m PyQt5.uic.pyuic /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/gns3_data.ui -o /root/Desktop/QT/FUNCTIONALITY_TOOL/src/gns3_data_ui.py
+
+/root/Desktop/QT/FUNCTIONALITY_TOOL/src/json_editor_ui.py: /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/json_editor.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/json_editor.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/json_editor_ui.py"
+	/usr/bin/python3.8 -m PyQt5.uic.pyuic /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/json_editor.ui -o /root/Desktop/QT/FUNCTIONALITY_TOOL/src/json_editor_ui.py
+
 /root/Desktop/QT/FUNCTIONALITY_TOOL/src/log_ui.py: /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/log.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/log.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/log_ui.py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/log.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/log_ui.py"
 	/usr/bin/python3.8 -m PyQt5.uic.pyuic /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/log.ui -o /root/Desktop/QT/FUNCTIONALITY_TOOL/src/log_ui.py
 
 /root/Desktop/QT/FUNCTIONALITY_TOOL/src/reports_ui.py: /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/reports.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/reports.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/reports_ui.py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/reports.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/reports_ui.py"
 	/usr/bin/python3.8 -m PyQt5.uic.pyuic /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/reports.ui -o /root/Desktop/QT/FUNCTIONALITY_TOOL/src/reports_ui.py
 
+/root/Desktop/QT/FUNCTIONALITY_TOOL/src/source_data_ui.py: /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/source_data.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/source_data.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/source_data_ui.py"
+	/usr/bin/python3.8 -m PyQt5.uic.pyuic /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/source_data.ui -o /root/Desktop/QT/FUNCTIONALITY_TOOL/src/source_data_ui.py
+
 /root/Desktop/QT/FUNCTIONALITY_TOOL/src/test_data_ui.py: /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/test_data.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/test_data.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/test_data_ui.py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/test_data.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/test_data_ui.py"
 	/usr/bin/python3.8 -m PyQt5.uic.pyuic /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/test_data.ui -o /root/Desktop/QT/FUNCTIONALITY_TOOL/src/test_data_ui.py
 
 /root/Desktop/QT/FUNCTIONALITY_TOOL/src/test_runner_ui.py: /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/test_runner.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/test_runner.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/test_runner_ui.py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/test_runner.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/test_runner_ui.py"
 	/usr/bin/python3.8 -m PyQt5.uic.pyuic /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/test_runner.ui -o /root/Desktop/QT/FUNCTIONALITY_TOOL/src/test_runner_ui.py
 
 /root/Desktop/QT/FUNCTIONALITY_TOOL/src/welcome_ui.py: /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/welcome.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/welcome.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/welcome_ui.py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Desktop/QT/FUNCTIONALITY_TOOL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Compiling /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/welcome.ui -> /root/Desktop/QT/FUNCTIONALITY_TOOL/src/welcome_ui.py"
 	/usr/bin/python3.8 -m PyQt5.uic.pyuic /root/Desktop/QT/FUNCTIONALITY_TOOL/ui/welcome.ui -o /root/Desktop/QT/FUNCTIONALITY_TOOL/src/welcome_ui.py
 
 build_ui: CMakeFiles/build_ui
 build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/config_ui.py
-build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/dummy_ui.py
 build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/fun_login_ui.py
+build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/gns3_data_ui.py
+build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/json_editor_ui.py
 build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/log_ui.py
 build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/reports_ui.py
+build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/source_data_ui.py
 build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/test_data_ui.py
 build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/test_runner_ui.py
 build_ui: /root/Desktop/QT/FUNCTIONALITY_TOOL/src/welcome_ui.py
