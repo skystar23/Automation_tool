@@ -3,7 +3,7 @@ import os,subprocess
 import stat
 import json
 from pathlib import Path
-
+import configparser
 #sourepages imports
 from src.config_ui import Ui_MainWindow as config
 from src.fun_login_ui import Ui_login_window
@@ -104,6 +104,101 @@ class TestdataPage(QtWidgets.QMainWindow):
         super().__init__(parent)
         self.ui = test_data()
         self.ui.setupUi(self)
+
+        self.file_path = f"/opt/V3_functional_testing/Testdata"
+        folder_path = Path(self.file_path)
+        self.ui.test_data_title_dp.addItems([f.name for f in folder_path.iterdir() if f.is_file()])
+        # Connect signals
+        # self.ui.test_data_title_dp.currentTextChanged.connect(self.update_file_list)
+        self.ui.test_data_open.clicked.connect(self.show_ini_window)
+    
+        
+    def show_ini_window(self):
+        # super().__init__()
+        # self.ui.setupUi(self)
+        print("test_data_ini_window")
+        self.ini_file = IniWindow(f"{self.file_path}/{self.ui.test_data_title_dp.currentText()}")
+        self.ini_file.show()
+      
+
+class IniWindow(QtWidgets.QMainWindow):
+        def __init__(self, ini_file):
+            super().__init__()
+            self.INI_FILE = ini_file
+            self.config = configparser.ConfigParser()
+            self.config.read(self.INI_FILE)
+
+            self.setWindowTitle(f"INI Editor - {ini_file}")
+            self.resize(600, 400)
+
+            # Build UI manually
+            central_widget = QtWidgets.QWidget()
+            self.setCentralWidget(central_widget)
+            layout = QtWidgets.QVBoxLayout(central_widget)
+
+            # Dropdown
+            self.comboBox = QtWidgets.QComboBox()
+            self.comboBox.addItems(self.config.sections())
+            self.comboBox.currentTextChanged.connect(self.load_section)
+            layout.addWidget(self.comboBox)
+
+            # Table
+            self.tableWidget = QtWidgets.QTableWidget()
+            self.tableWidget.setColumnCount(2)
+            self.tableWidget.setHorizontalHeaderLabels(["Key", "Value"])
+            layout.addWidget(self.tableWidget)
+
+            # Save button
+            self.saveButton = QtWidgets.QPushButton("Save Changes")
+            self.saveButton.clicked.connect(self.save_ini)
+            layout.addWidget(self.saveButton)
+
+            # Load first section
+            if self.config.sections():
+                self.load_section(self.comboBox.currentText())
+
+        def load_section(self, section):
+            self.tableWidget.setRowCount(0)
+
+            if not section:
+                return
+
+            section_data = dict(self.config.items(section))
+
+            self.tableWidget.setRowCount(len(section_data))
+            for row, (key, value) in enumerate(section_data.items()):
+                key_item = QTableWidgetItem(key)
+                key_item.setFlags(key_item.flags() & ~QtCore.Qt.ItemIsEditable)  # make key read-only
+                self.tableWidget.setItem(row, 0, key_item)
+
+                val_item = QTableWidgetItem(str(value))
+                self.tableWidget.setItem(row, 1, val_item)
+
+        def save_ini(self):
+            section = self.comboBox.currentText()
+            if not section:
+                return
+
+            # Update config with edited values
+            for row in range(self.tableWidget.rowCount()):
+                key = self.tableWidget.item(row, 0).text()
+                value = self.tableWidget.item(row, 1).text()
+                self.config.set(section, key, value)
+
+            # Write back to file
+            with open(self.INI_FILE, "w") as f:
+                self.config.write(f)
+
+            print(f"Section {section} saved!")
+            msg = QMessageBox()
+            msg.setIcon(QMessageBox.Information)
+            msg.setWindowTitle("Saved")
+            msg.setText(f"'{section}' has been saved successfully.")
+            msg.setStandardButtons(QMessageBox.Ok)
+            msg.exec_()
+
+            self.close()
+
 
 class ReportWindow(QtWidgets.QMainWindow):
     def __init__(self,parent=None):
@@ -269,7 +364,21 @@ class SourcedataWindow(QtWidgets.QMainWindow):
         super().__init__()
         self.ui=source_data()
         self.ui.setupUi(self)
+        self.file_path = f"/opt/V3_functional_testing/Sourcepagesdata"
+        folder_path = Path(self.file_path)
+        self.ui.web_page_dp.addItems([f.name for f in folder_path.iterdir() if f.is_file()])
+        # Connect signals
+        # self.ui.test_data_title_dp.currentTextChanged.connect(self.update_file_list)
+        self.ui.src_data_open.clicked.connect(self.show_ini_window)
+    
 
+
+    
+    def show_ini_window(self):
+        # super().__init__()
+        # self.ui.setupUi(self)
+        self.ini_file = IniWindow(f"{self.file_path}/{self.ui.web_page_dp.currentText()}")
+        self.ini_file.show()
 
 class JsonWindow(QtWidgets.QMainWindow):
     def __init__(self,JSON_FILE):

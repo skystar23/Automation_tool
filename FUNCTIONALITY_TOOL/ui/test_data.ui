@@ -1312,84 +1312,24 @@
        <string> Test Data</string>
       </property>
      </widget>
-     <widget class="QLabel" name="test_data_proto_label">
-      <property name="geometry">
-       <rect>
-        <x>145</x>
-        <y>93</y>
-        <width>81</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Protocol</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="test_data_proto_dp">
-      <property name="geometry">
-       <rect>
-        <x>249</x>
-        <y>90</y>
-        <width>491</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="palette">
-       <palette>
-        <active>
-         <colorrole role="Button">
-          <brush brushstyle="SolidPattern">
-           <color alpha="255">
-            <red>181</red>
-            <green>209</green>
-            <blue>250</blue>
-           </color>
-          </brush>
-         </colorrole>
-        </active>
-        <inactive>
-         <colorrole role="Button">
-          <brush brushstyle="SolidPattern">
-           <color alpha="255">
-            <red>181</red>
-            <green>209</green>
-            <blue>250</blue>
-           </color>
-          </brush>
-         </colorrole>
-        </inactive>
-        <disabled>
-         <colorrole role="Button">
-          <brush brushstyle="SolidPattern">
-           <color alpha="255">
-            <red>181</red>
-            <green>209</green>
-            <blue>250</blue>
-           </color>
-          </brush>
-         </colorrole>
-        </disabled>
-       </palette>
-      </property>
-     </widget>
      <widget class="QLabel" name="test_data_title_lable">
       <property name="geometry">
        <rect>
-        <x>142</x>
-        <y>132</y>
-        <width>81</width>
+        <x>122</x>
+        <y>101</y>
+        <width>101</width>
         <height>30</height>
        </rect>
       </property>
       <property name="text">
-       <string>Test Title</string>
+       <string>Test File Name</string>
       </property>
      </widget>
      <widget class="QComboBox" name="test_data_title_dp">
       <property name="geometry">
        <rect>
         <x>249</x>
-        <y>136</y>
+        <y>105</y>
         <width>491</width>
         <height>25</height>
        </rect>
@@ -1490,7 +1430,7 @@
       <property name="geometry">
        <rect>
         <x>353</x>
-        <y>192</y>
+        <y>183</y>
         <width>70</width>
         <height>30</height>
        </rect>
